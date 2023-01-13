@@ -4,338 +4,341 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My project</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="heads site-nav">
-      <div class="container wrapper">
-        <!--child 1-->
-        <a class="logo-font" href="index.html"
-          >Web<span class="span-head">Studio</span></a
-        >
-
-        <ul class="ul-info ul-info-links">
-          <li class="link-list"><a class="menu" href="#">Agencja</a></li>
-          <li class="link-list">
-            <a class="menu active" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="link-list"><a class="menu" href="#">Kontakt</a></li>
-        </ul>
-        <!--child 2-->
-        <div class="contact">
-          <a class="contact-links" href="mailto:info@devstudio.com">
-            <svg class="contact-icon" width="16" height="12">
-              <use href="images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
+    <!-- Nagłówek makiety -->
+    <header class="header-line">
+      <div class="container nav-box">
+        <div class="nav-box-menu">
+          <a class="header-logo" href="index.html"
+            ><span class="logo-web">Web</span>Studio</a
           >
-
-          <a class="contact-links" href="tel:+48111111111">
-            <svg class="contact-icon" width="16" height="12">
-              <use href="images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111</a
-          >
-        </div>
-      </div>
-    </nav>
-    <main>
-      <section>
-        <div class="container">
+          <!--Menu makiety-->
           <nav>
-            <ul class="ul-info-port wrapper-port">
+            <ul class="nav-list">
               <li>
-                <button class="button" type="button" value="Wszystkie">
-                  Wszystkie
-                </button>
+                <a class="nav-list-item-link" href="index.html">Studio</a>
               </li>
-              <li><button value="Strony" class="button">Strony</button></li>
               <li>
-                <button type="button" value="Aplikacje" class="button">
-                  Aplikacje
-                </button>
+                <a class="nav-list-item-link is-active" href="#">Portfolio</a>
               </li>
-              <li><button value="Dizajn" class="button">Dizajn</button></li>
-              <li>
-                <button value="Marketing" class="button">Marketing</button>
-              </li>
+              <li><a class="nav-list-item-link" href="#">Contacts</a></li>
             </ul>
           </nav>
         </div>
-      </section>
-      <section class="container">
-        <ul class="ul-info-port card-set">
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  class="card-image"
-                  src="images/portfolio/technocrack.jpg"
-                  alt="Technocrack Strona Internetowa"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Technocrack</h3>
-                <p class="service">Strona internetowa</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  class="card-image"
-                  src="images/portfolio/basketball.jpg"
-                  alt="New Orleans vs Golden State"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Grafika New Orleans vs Golden State</h3>
-                <p class="service">Dizajn</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  class="card-image"
-                  src="images/portfolio/seafood.jpg"
-                  alt="Restauracja Seafood"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Restauracja Seafood</h3>
-                <p class="service">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  class="card-image"
-                  src="images/portfolio/prime.jpg"
-                  alt="Projekt Prime"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Projekt Prime</h3>
-                <p class="service">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  src="images/portfolio/boxes.jpg"
-                  alt="Projekt Boxes"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Projekt Boxes</h3>
-                <p class="service">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  class="card-image"
-                  src="images/portfolio/inspiration.jpg"
-                  alt="Inspiracja Bez Granic"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Inspiration has no borders</h3>
-                <p class="service">Strona internetowa</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  class="card-image"
-                  src="images/portfolio/magazine.jpg"
-                  alt="Magazyn Edycja Limitowana"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Magazyn Limited Edition</h3>
-                <p class="service">Dizajn</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  class="card-image"
-                  src="images/portfolio/projectLab.jpg"
-                  alt="Projekt LAB"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Projekt LAB</h3>
-                <p class="service">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card-items">
-            <figure>
-              <div class="card-container">
-                <img
-                  class="card-image"
-                  src="images/portfolio/growingBusiness.jpg"
-                  alt="Rozwój Biznesu"
-                  width="370"
-                  height="294"
-                />
-                <p class="card-text">
-                  a koronawirusa. Firmy wykorzystują tę platformę do
-                  celóTechnocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechnianiw szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-              <figcaption class="card-border">
-                <h3 class="names">Growing Biznes</h3>
-                <p class="service">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+        <div class="contact">
+          <a class="header-address" href="mailto:info@devstudio.com">
+            <svg width="16" height="12">
+              <use href="images/icons.svg#icon-envelope-2"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a class="header-phone" href="tel:+12127724150">
+            <svg width="10" height="16">
+              <use href="images/icons.svg#icon-smartphone-1"></use>
+            </svg>
+            +1 212-772-4150</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Portfolio filters-->
+      <section class="section">
+        <div class="container">
+          <ul class="filter">
+            <li>
+              <button class="filter-button" type="button">All</button>
+            </li>
+            <li>
+              <button class="filter-button" type="button">Web-sites</button>
+            </li>
+            <li>
+              <button class="filter-button" type="button">Apps</button>
+            </li>
+            <li>
+              <button class="filter-button" type="button">Design</button>
+            </li>
+            <li>
+              <button class="filter-button" type="button">Marketing</button>
+            </li>
+          </ul>
+          <!--Portfolio projects-->
+          <ul class="projects">
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/technocrack.jpg"
+                    alt="Technoduck web-page"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">Technoduck</h3>
+                  <p class="project-card-text">Web-site</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/basketball.jpg"
+                    alt="basketball players"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">
+                    Poster New Orleans vs Golden Star
+                  </h3>
+                  <p class="project-card-text">Design</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/seafood.jpg"
+                    alt="Restauracja Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">Seafood Restaurant</h3>
+                  <p class="project-card-text">Apps</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/earphones.jpg"
+                    alt="Project Prime"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">Project Prime</h3>
+                  <p class="project-card-text">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/boxes.jpg"
+                    alt="Project Boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">Project Boxes</h3>
+                  <p class="project-card-text">Apps</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/inspiration.jpg"
+                    alt="Inspiration"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">Inspiration has no Borders</h3>
+                  <p class="project-card-text">Web-site</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/newsletter.jpg"
+                    alt="newsletter"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">Limited Edition</h3>
+                  <p class="project-card-text">Design</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/tag.jpg"
+                    alt="Projekt LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">Project LAB</h3>
+                  <p class="project-card-text">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="project-card">
+                <div class="project-overlay">
+                  <img
+                    src="images/portfolio/business.jpg"
+                    alt="Business"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project-card-overlay">
+                    <p class="project-card-overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="project-descrip">
+                  <h3 class="project-card-title">Growing Business</h3>
+                  <p class="project-card-text">Apps</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <!-- footer section -->
-
-    <footer class="footer-info">
-      <div class="container footer-flex">
-        <div>
-          <a class="footer-logo" href="index.html"
-            >Web<span class="span-footer">Studio</span></a
+    <!--Footer-->
+    <footer class="footer-color">
+      <div class="container nav-footer">
+        <div class="footer-contact-box">
+          <a class="footer-logo" href="index.html">
+            <span class="logo-web">Web</span>Studio</a
           >
-          <address class="address-info">
-            <div class="city-street">m.Warszawa, Aleje Jerozolimskie 21</div>
-            <div class="contact-div">
-              <a class="contact-info" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-              <a class="contact-info" href="tel:+48111111111"
-                >+48 111 111 111</a
-              >
-            </div>
+          <address class="footer-address">
+            <p>695 Park Ave, New York, NY 10065, United States</p>
+            <a class="footer-address-link-u" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+            <a class="footer-phone-link" href="tel:+12127724150">
+              +1 212-772-4150</a
+            >
           </address>
         </div>
-
-        <!-- join us section -->
-
-        <div class="social-box">
-          <p class="social-header">Dołącz do nas</p>
-          <ul class="social-icon-box">
-            <li class="list-item">
-              <a href="#" class="social-link">
-                <svg class="icon-social">
-                  <use href="images/icons.svg#icon-instagram-2"></use>
+        <div>
+          <h2 class="social-title">FIND US ON</h2>
+          <ul class="social-icons">
+            <li>
+              <a href="#" class="social-link footer-social-link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-w"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
-              <a href="#" class="social-link">
-                <svg class="icon-social">
-                  <use href="images/icons.svg#icon-twitter-1"></use>
+            <li>
+              <a href="#" class="social-link footer-social-link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-w"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
-              <a href="#" class="social-link">
-                <svg class="icon-social">
-                  <use href="images/icons.svg#icon-facebook-1"></use>
+            <li>
+              <a href="#" class="social-link footer-social-link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-w"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
-              <a href="#" class="social-link">
-                <svg class="icon-social">
-                  <use href="images/icons.svg#icon-linkedin-1"></use>
+            <li>
+              <a href="#" class="social-link footer-social-link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-w"></use>
                 </svg>
               </a>
             </li>
@@ -343,11 +346,5 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>Button</button>
-      </div>
-    </div>
-    <script src="/js/modal.js"></script>
   </body>
 </html>
