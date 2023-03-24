@@ -52,6 +52,7 @@
 
   &-button {
     color: $mainColor;
+    fill: $mainColor;
     cursor: pointer;
     transition-property: fill;
     transition-duration: 250ms;
