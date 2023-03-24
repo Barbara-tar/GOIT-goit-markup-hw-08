@@ -32,11 +32,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 30px;
 }
-
 img {
   display: block;
   max-width: 100%;
@@ -51,13 +50,11 @@ img {
     padding: 94px 0;
   }
 }
-
 .header {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
   padding: 16px 0;
 }
-
 .header__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +144,6 @@ img {
   border-radius: 2px;
   top: 43.5px;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
     padding: 26px 0;
@@ -167,7 +163,6 @@ img {
     font-size: 12px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .header {
     padding: 24.54px 0 23.53px;
@@ -244,7 +239,6 @@ img {
   padding: 10px 41px;
   margin: 0 auto;
 }
-
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -382,7 +376,6 @@ img {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   .menu__toggle {
     display: none;
@@ -393,7 +386,6 @@ img {
   border: none;
   background: none;
 }
-
 .menu__container {
   height: 100vh;
   padding: 48px 40px;
@@ -512,7 +504,6 @@ img {
   color: #2196f3;
   text-decoration: none;
 }
-
 .backdrop {
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -530,7 +521,8 @@ img {
 }
 .modal {
   position: absolute;
-  width: 528px;
+  width: calc(100vw - 30px);
+  max-width: 450px;
   min-height: 581px;
   top: 50%;
   left: 50%;
@@ -551,11 +543,6 @@ img {
   transition-duration: 1s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
-}
-.modal__close-button:hover,
-.modal__close-button:focus {
-  background-color: #2196f3;
-  fill: #fff;
 }
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.25);
@@ -580,7 +567,7 @@ img {
 }
 .modal__title {
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
@@ -655,8 +642,8 @@ img {
 }
 .modal__form-regulations {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   text-align: center;
@@ -676,41 +663,25 @@ img {
   border: 2px solid #000;
   border-radius: 2px;
   position: absolute;
-  top: 10%;
-  left: 15px;
-  -webkit-transform: translateY(-10%);
-  transform: translateY(-10%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .modal__form-checkbox-svg {
   position: absolute;
-  top: 10%;
-  left: 15px;
-  -webkit-transform: translateY(-10%);
-  transform: translateY(-10%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 0;
-  fill: none;
+  background-color: #2196f3;
+  border-radius: 2px;
 }
 .modal__form-regulations
   input[type="checkbox"]:checked
   + .modal__form-checkbox-svg {
   opacity: 1;
-  position: absolute;
-}
-.modal__form-checkbox-svg:hover,
-.modal__form-checkbox-svg:focus {
-  background-color: #2196f3;
-  fill: #fff;
 }
 .modal__form-regulations-link {
   color: #2196f3;
 }
-.modal__button {
-  padding: 10px 76px;
-  margin: 20px auto 0;
-  fill: #fff;
-  display: block;
-}
-
 .modal__button {
   padding: 10px 76px;
   margin: 20px auto 0;
@@ -742,10 +713,10 @@ img {
 }
 @media screen and (min-width: 473px) {
   .modal__form-checkbox-svg {
-    top: 10%;
+    top: 50%;
   }
   .modal__form-regulations input[type="checkbox"] {
-    top: 10%;
+    top: 50%;
   }
 }
 .trumps {
@@ -753,7 +724,7 @@ img {
 }
 .trumps__box {
   padding: 25px 100px;
-  background-color: var(--team-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
   text-align: center;
 }
@@ -775,7 +746,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--support-color);
 }
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .trumps__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -785,7 +755,6 @@ img {
     text-align: left;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .trumps__title {
     text-align: left;
@@ -794,14 +763,13 @@ img {
 .works {
   display: none;
 }
-
 .works__item {
   position: relative;
 }
-.works__item > img {
+.works__item_ > img {
   display: block;
 }
-.works__item .works__description {
+.works__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -815,7 +783,6 @@ img {
   bottom: 0;
   padding: 27px;
 }
-
 @media screen and (min-width: 1200px) {
   .works {
     display: block;
@@ -856,7 +823,6 @@ img {
   color: #757575;
   margin-bottom: 16px;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -924,6 +890,7 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   fill: #afb1b8;
+  text-align: center;
   -webkit-transition-property: fill, border-color;
   transition-property: fill, border-color;
   -webkit-transition-duration: 250ms;
@@ -935,7 +902,6 @@ img {
   fill: #2196f3;
   border-color: #2196f3;
 }
-
 .customers__box {
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
   flex-basis: calc((100% - 60px) / 2);
@@ -1127,9 +1093,6 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer_address-link--underline {
-  text-decoration: underline;
-}
 .footer__address-link:hover,
 .footer__address-link:focus {
   color: #2196f3;
@@ -1163,33 +1126,6 @@ img {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: #fff;
-  outline: none;
-  width: calc(100vw - 30px);
-  max-width: 450px;
-  padding: 14px 0 14px 15px;
-}
-.footer__newsletter-text::-webkit-input-placeholder {
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__newsletter-text::-moz-placeholder {
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__newsletter-text:-ms-input-placeholder {
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__newsletter-text::-ms-input-placeholder {
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__newsletter-text::placeholder {
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__button {
   color: #fff;
   outline: none;
   width: calc(100vw - 30px);
@@ -1273,5 +1209,4 @@ img {
   .footer__newsletter-text {
     width: 358px;
   }
-}
-/*# sourceMappingURL=main.min.css.map */
+} /*# sourceMappingURL=main.min.css.map */
