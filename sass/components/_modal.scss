@@ -53,6 +53,12 @@
     cursor: pointer;
   }
 
+  &__close-button:hover,
+  &__close-button:focus {
+    background-color: $highlightColor;
+    fill: $whiteColor;
+  }
+
   &__title {
     font-size: 20px;
     line-height: 1.5;
