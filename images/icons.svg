@@ -171,8 +171,8 @@
 </svg>
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="icon-menu40px" viewBox="0 0 32 32" color= #212121;>
-<path d="M4.525 10.9v-2.55h22.95v2.55h-22.95zM4.525 17.275h22.95v-2.55h-22.95v2.55zM4.525 23.65h22.95v-2.55h-22.95v2.55z"></path>
+<symbol id="icon-menu40px" viewBox="0 0 32 32">
+<path fill: #212121; d="M4.525 10.9v-2.55h22.95v2.55h-22.95zM4.525 17.275h22.95v-2.55h-22.95v2.55zM4.525 23.65h22.95v-2.55h-22.95v2.55z"></path>
 </symbol>
 </defs>
 </svg>
