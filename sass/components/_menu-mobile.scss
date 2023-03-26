@@ -1,6 +1,6 @@
 // Menu mobilne
 // MOBILE RESPONSIVE
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .header__menu,
   .header__menu-contact {
     display: none;
