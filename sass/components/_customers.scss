@@ -26,7 +26,7 @@
   }
 }
 .customers__box {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     flex-basis: calc((100% - 30px) / 2);
     margin-left: 15px;
     margin-right: 15 px;
