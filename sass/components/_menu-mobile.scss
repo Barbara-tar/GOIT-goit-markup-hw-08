@@ -17,9 +17,6 @@
     min-width: 481px;
     max-width: 768px;
     padding: 0;
-    .menu__toggle {
-      display: none;
-    }
   }
 }
 
@@ -29,10 +26,8 @@
     max-width: 1200px;
     padding: 0;
   }
-  .menu__toggle {
-    display: none;
-  }
 }
+
 .menu__toggle {
   outline: none;
   border: none;
