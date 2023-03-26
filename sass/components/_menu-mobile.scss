@@ -4,6 +4,7 @@
   .container {
     max-width: 100%;
     padding: 0;
+    overflow-y: hidden;
     .header__menu,
     .header__menu-contact {
       display: none;
