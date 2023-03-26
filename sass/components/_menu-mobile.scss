@@ -6,11 +6,12 @@
   }
 }
 
-.header__menu,
-.header__menu-contact {
-  display: none;
+@media screen and (min-width: 480px) {
+  .header__menu,
+  .header__menu-contact {
+    display: none;
+  }
 }
-
 .menu__toggle {
   outline: none;
   border: none;
