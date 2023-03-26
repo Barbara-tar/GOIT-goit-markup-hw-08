@@ -89,8 +89,6 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
     padding: 26px 0;
-    min-width: 768px;
-    max-width: 1199px;
 
     &__menu {
       margin-left: 83px;
@@ -113,8 +111,6 @@
 @media screen and (min-width: 1200px) {
   .header {
     padding: 24.54px 0 23.53px;
-    min-width: 769px;
-    max-width: 1200px;
 
     &__menu {
       margin-left: 93px;
