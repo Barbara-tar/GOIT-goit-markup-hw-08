@@ -1,12 +1,5 @@
 // Menu mobilne
 // MOBILE RESPONSIVE
-@media screen and (max-width: 768px) {
-  .header__menu,
-  .header__menu-contact {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .menu__toggle {
     display: none;
