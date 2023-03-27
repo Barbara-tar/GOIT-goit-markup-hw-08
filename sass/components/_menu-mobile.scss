@@ -1,15 +1,33 @@
 // Menu mobilne
 // MOBILE RESPONSIVE
-@media screen and (min-width: 480px) {
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0;
+  }
   .header__menu,
   .header__menu-contact {
+    display: none;
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    min-width: 481px;
+    max-width: 768px;
+    padding: 0;
+  }
+  .menu__toggle {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .menu__toggle {
-    display: none;
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    min-width: 769px;
+    max-width: 1200px;
+    padding: 0;
   }
 }
 
