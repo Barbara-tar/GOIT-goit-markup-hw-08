@@ -2,7 +2,8 @@
 .trumps {
   padding-bottom: 0;
 
-  &__box {
+  &__box,
+  .container {
     padding: 25px 100px;
     background-color: $teamColor;
     border-radius: 4px;
