@@ -47,8 +47,7 @@ img {
 // DESKTOP RESPONSIVE
 
 @media screen and (min-width: 1200px) {
-  .list,
-  .container {
+  .list {
     flex-wrap: nowrap;
   }
   .section {
